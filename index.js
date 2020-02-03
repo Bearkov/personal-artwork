@@ -37,7 +37,7 @@ client.on('message', message => {
      }
   });
   process.on("uncaughtException", err => {
-    console.log(`Uncaught Exception`);
+    console.log(`Uncaught Bearception`);
     process.exit(1);
   });
 client.login(token);
