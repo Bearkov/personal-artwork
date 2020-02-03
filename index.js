@@ -1,7 +1,10 @@
 const Discord = require('discord.js');
-const {token} = require('./config.json');
+
+const key = 'NjczNjE2MTE0ODczMjcwMjg2.XjeBUg.ikFF1lALJw1pGY-FX_SK8KaIjas';
 
 const client = new Discord.Client();
+
+client.login(key);
 
 client.on('ready', () => {
     console.log('Bot is now connected');
@@ -40,4 +43,3 @@ client.on('message', message => {
     console.log(`Uncaught Bearception`);
     process.exit(1);
   });
-client.login(token);
