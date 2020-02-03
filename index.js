@@ -1,10 +1,11 @@
 const Discord = require('discord.js');
 
-const key = 'NjczNjE2MTE0ODczMjcwMjg2.XjeBUg.ikFF1lALJw1pGY-FX_SK8KaIjas';
+const key = 'NjczNjE2MTE0ODczMjcwMjg2.XjeESA.QXliWxna0OflGmm5a8gpi7hQ5JU';
 
 const client = new Discord.Client();
 
-client.login(key);
+try {client.login(key);}
+catch {console.log('YO DIS AINT RIGHT');}
 
 client.on('ready', () => {
     console.log('Bot is now connected');
