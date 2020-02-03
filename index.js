@@ -3,9 +3,10 @@ const Discord = require('discord.js');
 //const {token} = require ('./config.json');
 
 const client = new Discord.Client();
+//client.login(token);
 
 try {client.login(process.env.TOKEN);}
-catch {console.log('YO DIS AINT RIGHT');}
+catch (err) {console.log('YO DIS AINT RIGHT');}
 
 client.on('ready', () => {
     console.log('Bot is now connected');
