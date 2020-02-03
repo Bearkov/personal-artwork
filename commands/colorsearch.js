@@ -15,8 +15,7 @@ exports.run = async (client, message, args) => {
     .setColor("#ff9900")
     .setTitle(body.name)
     .setDescription("Hex: " + body.hex + '\n' + "RGB: " + body.rgb)
-    .setImage(body.image) 
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .setImage(body.image);
     message.channel.send({embed});
 };
 

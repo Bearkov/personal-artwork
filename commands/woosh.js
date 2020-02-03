@@ -6,8 +6,7 @@ exports.run = async (client, message, args) => {
     
     const embed = new Discord.RichEmbed()
     .setColor("#ff9900")
-    .setImage(`https://api.alexflipnote.dev/jokeoverhead?image=` + avatar) 
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .setImage(`https://api.alexflipnote.dev/jokeoverhead?image=` + avatar);
     message.channel.send({embed});
 };
 

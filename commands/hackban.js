@@ -23,8 +23,7 @@ exports.run = (client, message, args) => {
     .addField('Action:', 'HackBan')
     .addField('User:', `${args[0]}`)
     .addField('Moderator:', `${message.author.username}#${message.author.discriminator}`)
-    .addField('Reason', reason)
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .addField('Reason', reason);
     
     let logchannel = message.guild.channels.find('name', 'logs');
     if  (!logchannel){

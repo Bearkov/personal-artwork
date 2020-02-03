@@ -40,9 +40,7 @@ exports.run = (client, message) => {
     .addField("RAM Usage %", `${(100 - osutils.freememPercentage() * 100).toString().split(".")[0] + "." + (100 - osutils.freememPercentage() * 100).toString().split(".")[1].split('')[0] + (100 - osutils.freememPercentage() * 100).toString().split(".")[1].split('')[1]}%`,true)
     //.addField("Server Uptime", osutils.sysUptime() +"ms",true)
     .addField("Ping", Math.round(client.ping) + "ms", true)
-    .addField("Uptime", days + "d " + hours + "h " + minutes + "m " + seconds + "." + milliseconds + "s", true)
-    .addField("Developer", `${customisation.ownername}`, true)
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .addField("Uptime", days + "d " + hours + "h " + minutes + "m " + seconds + "." + milliseconds + "s", true);
         message.channel.send({embed});
   })
 })

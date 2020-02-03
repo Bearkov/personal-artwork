@@ -38,8 +38,7 @@ exports.run = async (client, message, args) => {
     .addField('Action:', 'Temp Mute')
     .addField('User:', `${tomute.username}#${tomute.discriminator} (${tomute.id})`)
     .addField('Moderator:', `${message.author.username}#${message.author.discriminator}`)
-    .addField('Length', ms(ms(mutetime)))
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .addField('Length', ms(ms(mutetime)));
     message.channel.send({embed});
 
     message.guild.member(tomute).addRole(muteRole);

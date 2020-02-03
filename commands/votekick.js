@@ -44,8 +44,7 @@ exports.run = async (bot, message, args) => {
                                           "NOTE: Votes needed to kick (3+)\n" +
                                           "----------------------------------------", true)
 
-            .setColor("0x#FF0000")
-            .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+            .setColor("0x#FF0000");
   await message.channel.send({embed: sumsum});
 
   if(YES_Count >= 4 && YES_Count > NO_Count){

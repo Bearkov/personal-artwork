@@ -48,8 +48,7 @@ exports.run = (client, message, args) => {
   .addField("Channels", message.guild.channels.size, true)
   .addField("Emojis", `${emojis}/100`, true)
   .addField("Verification Level", verifLevels[message.guild.verificationLevel], true)
-  .setColor(Math.floor(Math.random()*16777215))
-  .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+  .setColor(Math.floor(Math.random()*16777215));
   message.channel.send({embed});
 }
 

@@ -32,10 +32,10 @@ exports.run = async (client, message) => {
   osutils.cpuUsage(function(v) {
     const embed = new Discord.RichEmbed()
     .setColor(0x7289DA)
-    .setThumbnail(`https://cdn.discordapp.com/avatars/482128001828651008/2189c071f81b58045729a60ecb81ad00.png?size=2048`)
-    .setURL(`https://cdn.discordapp.com/avatars/482128001828651008/2189c071f81b58045729a60ecb81ad00.png?size=2048`)
+    .setThumbnail(`https://cdn.discordapp.com/avatars/673616114873270286/610c9ec3bd02ff950b8489334d3b1f2d.png?size=2048?size=1024`)
+    .setURL(`https://cdn.discordapp.com/avatars/673616114873270286/610c9ec3bd02ff950b8489334d3b1f2d.png?size=2048?size=1024`)
     .setTimestamp()
-    .addField("Cryptonix X", "Show the bot's stats.")
+    .addField("Vladibearski", "Show the bot's stats.")
     .addField("--------------------------------------------------------------------------------","------------------------------------------------------------------------------")
     .addField("Total Servers", `${client.guilds.size}`, true)
     .addField("Server Prefix", prefix, true)
@@ -47,8 +47,7 @@ exports.run = async (client, message) => {
     .addField("Library", "Discord.js", true)
     .addField("Ping", Math.round(client.ping) + "ms", true)
     .addField("Uptime", days + "d " + hours + "h " + minutes + "m " + seconds + "." + milliseconds + "s", true)
-    .addField("Developer", `${customisation.ownername}`, true)
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .addField("Developer", `${customisation.ownername}`, true);
         message.channel.send({embed});
   })
 })

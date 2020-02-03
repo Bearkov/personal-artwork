@@ -8,8 +8,7 @@ exports.run = (client, message) => {
   .setTitle("Cryptonix Mod Bot Info:", '')
   .addField('Important Information',info.infoMsg1)
   .addField('Inviting the Bot',info.infoMsg2)
-  .addField('Neat Links',info.infoMsg3)
-  .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+  .addField('Neat Links',info.infoMsg3);
 
   message.author.send({embed}).catch(e =>{
     if (e) {

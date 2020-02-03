@@ -35,8 +35,7 @@ exports.run = (client, message, args) => {
   .addField('Warned by:', `${message.author.username}#${message.author.discriminator}`)
   .addField('Number of warnings:', warns[`${user}, ${message.guild.id}`].warns)
   .addField('Reason', reason)
-  .addField('Logged in:', '<#' + logchannel.id +'>')
-  .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+  .addField('Logged in:', '<#' + logchannel.id +'>');
 
   let logchannel = message.guild.channels.find('name', 'logs');
     if  (!logchannel){

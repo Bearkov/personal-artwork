@@ -5,8 +5,7 @@ exports.run =  (client, message, args) => {
   message.delete();
   let embed = new Discord.RichEmbed()
     .setTitle("Vote for Cryptonix X!")
-    .addField("Voting on discordbots.org:", "https://discordbots.org/bot/482128001828651008")
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .addField("Voting on discordbots.org:", "https://discordbots.org/bot/482128001828651008");
   message.channel.send({embed});
 }
 exports.conf = {

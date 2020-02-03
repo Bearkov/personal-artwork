@@ -35,8 +35,7 @@ exports.run = async (client, message, args) => {
     .addField('Action:', 'Mute/Unmute')
     .addField('User:', `${user.username}#${user.discriminator} (${user.id})`)
     .addField('Moderator:', `${message.author.username}#${message.author.discriminator}`)
-    .addField('Reason', reason)
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .addField('Reason', reason);
   message.channel.send({embed})
 
   if (!message.guild.member(client.user).hasPermission('MANAGE_ROLES_OR_PERMISSIONS')) return message.reply(':x: I do not have the correct permissions.').catch(console.error);

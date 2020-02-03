@@ -21,8 +21,7 @@ exports.run = (client, message, args) => {
     .addField('Action:', 'Kick')
     .addField('User:', `${user.username}#${user.discriminator} (${user.id})`)
     .addField('Moderator:', `${message.author.username}#${message.author.discriminator}`)
-    .addField('Reason', reason)
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .addField('Reason', reason);
   let logchannel = message.guild.channels.find('name', 'logs');
   if  (!logchannel){
     message.channel.send(`:white_check_mark: Success! I have kicked that toxic kid.`)

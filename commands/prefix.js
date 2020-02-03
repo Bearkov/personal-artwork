@@ -27,8 +27,7 @@ exports.run = async (bot, message, args, prefix) => {
     let embed = new Discord.RichEmbed()
     .setColor("#ff8200")
     .setTitle("Prefix Changed")
-    .setDescription(`Set to ${args[0]}`)
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .setDescription(`Set to ${args[0]}`);
 
     message.channel.send({embed});
   }

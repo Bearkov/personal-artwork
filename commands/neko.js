@@ -10,8 +10,7 @@ exports.run = async (client, message, args, tools) => {
     const embed = new Discord.RichEmbed()
     .setColor("#ff9900")
     .setTitle("Here's Your Neko OwO")
-    .setImage(body.neko) 
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .setImage(body.neko);
     message.channel.send({embed})
 };
 

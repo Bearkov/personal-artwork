@@ -16,8 +16,7 @@ exports.run = (client, message, args) => {
             .setColor(0xdb3236)
             .setAuthor(`Results for ${args.join(' ')}`, googleIcon)
             .setThumbnail(googleThumbnail)
-            .addField(`**${link.title} - ${link.href}**`, link.description)
-            .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+            .addField(`**${link.title} - ${link.href}**`, link.description);
 
         message.channel.send({embed}).catch(e => {
            if (e) return message.channel.send("There was an error!\n" + e);

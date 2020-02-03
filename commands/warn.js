@@ -34,8 +34,7 @@ exports.run = async (client, message, args) => {
   .addField('User:', `${user.username}#${user.discriminator}`)
   .addField('Warned by:', `${message.author.username}#${message.author.discriminator}`)
   .addField('Number of warnings:', warns[`${user.id}, ${message.guild.id}`].warns)
-  .addField('Reason', reason)
-  .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+  .addField('Reason', reason);
   let logchannel = message.guild.channels.find('name', 'logs');
   if  (!logchannel){
     message.channel.send({embed})

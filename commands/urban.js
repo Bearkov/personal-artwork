@@ -16,8 +16,7 @@ exports.run = async (bot, message, args) => {
                 .setDescription(json.definition)
                 .addField('Upvotes', json.thumbs_up, true)
                 .addField('Downvotes', json.thumbs_down, true)
-                .setTimestamp(new Date())
-                .setFooter(`Written by ${json.author}`);
+                .setTimestamp(new Date());
 
             message.channel.send(def);
         });

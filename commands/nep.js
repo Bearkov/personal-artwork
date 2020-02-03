@@ -8,8 +8,7 @@ exports.run = (client, message, args) => {
     .setColor(Math.floor(Math.random()*16777215))
     .setTimestamp()
     .setTitle("NEP NEP TOP NEP")
-    .setImage(`${nep[Math.floor(Math.random() * nep.length)]}`)
-    .setFooter(`© Cryptonix X Mod Bot by ${customisation.ownername}`);
+    .setImage(`${nep[Math.floor(Math.random() * nep.length)]}`);
     message.channel.send({embed})
 }
 
