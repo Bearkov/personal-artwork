@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 
-const key = 'NjczNjE2MTE0ODczMjcwMjg2.XjeESA.QXliWxna0OflGmm5a8gpi7hQ5JU';
+//const {token} = require ('./config.json');
 
 const client = new Discord.Client();
 
-try {client.login(key);}
+try {client.login(process.env.TOKEN);}
 catch {console.log('YO DIS AINT RIGHT');}
 
 client.on('ready', () => {
