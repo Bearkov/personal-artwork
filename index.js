@@ -28,7 +28,7 @@ fs.readdir('./commands/', (err, files) => {
 
 client.on('ready', () => {
   setInterval(() => {
-    client.user.setPresence({ game: { name: `Gaming with /help`, type: 1, url: "https://www.twitch.tv/hiroaki_haruto" }})
+    client.user.setPresence({ game: { name: `Sharpening sticks`, type: 1, url: "https://manjaro.org" }})
   }, 60000);
 });
 
