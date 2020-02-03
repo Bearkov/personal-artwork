@@ -20,7 +20,7 @@ client.on('message', message => {
 
   client.on('message', message => {
     if (message.content === 'ping') {
-      message.channel.send('shut the fuck up faggot');
+      message.author.sendMessage('shut the fuck up faggot');
     }
   });
 
@@ -34,7 +34,7 @@ client.on('message', message => {
     const bearsers = message.mentions.users.first();
     if (message.content.startsWith('!av')) {
       try {
-        message.channel.send('```Successful! That\'t cost you 1 Salmon!```'+bearsers.displayAvatarURL);
+        message.channel.send('```Successful! That\'ll cost you 1 Salmon!```'+bearsers.displayAvatarURL);
         }
       catch (err) {
         message.channel.send('```!!! Error: This user does not exist. If you\'re sure this error is an error please contact an Admin directly. !!!```');
