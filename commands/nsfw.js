@@ -12,3 +12,8 @@ exports.run = (client, msg, args) => {
     msg.channel.send("This isn't NSFW channel!")
   }
 };
+exports.help = {
+    name: 'nsfw',
+    description: 'NSFW Command',
+    usage: 'nsfw'
+  };
